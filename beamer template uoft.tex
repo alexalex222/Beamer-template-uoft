@@ -13,6 +13,8 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{arrows, shapes, decorations, automata, backgrounds, fit, petri, calc}
 
+\newcommand*{\logofont}{\fontfamily{phv}\selectfont}
+
 \definecolor{uoftblue}{RGB}{6,41,88} % official blue color for uoft
 
 
@@ -28,7 +30,10 @@
 \setbeamercolor{date in head/foot}{fg=uoftblue}
 \setbeamercolor{date in head/foot}{bg=white}
 \setbeamercolor{title}{fg=uoftblue}
+\setbeamerfont{title}{series=\bfseries}
 \setbeamercolor{frametitle}{fg=uoftblue}
+\setbeamerfont{frametitle}{series=\bfseries}
+
 
 % set logo at non-title pages
 \logo{\includegraphics[height=0.8cm]{logo_uoft.png}\vspace*{-.055\paperheight}\hspace*{.85\paperwidth}}
@@ -42,8 +47,8 @@
     \begin{textblock*}{4cm}(0.5cm,-7cm)
         \includegraphics[width=4cm]{logo_uoft.png}
     \end{textblock*}
-    \begin{textblock*}{4cm}(4.8cm,-6.3cm)
-        \huge \color{uoftblue}{$\vert$ Engineering}
+    \begin{textblock*}{8cm}(5.0cm,-6.5cm)
+        \huge \color{uoftblue}{$\Bigr\rvert$ \hspace{0.15cm} \textbf{\logofont Engineering}}
     \end{textblock*}
 \end{frame}
 }
